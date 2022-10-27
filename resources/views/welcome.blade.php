@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
+    @extends('layout.main')
 
-        <title>Laravel</title>
-
+    @section('titulo', 'Loft eventos')
        
-    </head>
-    <body>
+       
+       
+    @section('content')
        <h1>titulo</h1>
        @if(10 > 25)
             <p>está certo</p>
@@ -36,5 +31,4 @@
 
         
     <script src="/js/script.js"></script>
-    </body>
-</html>
+ 

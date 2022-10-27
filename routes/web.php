@@ -25,3 +25,8 @@ Route::get('/', function () {
 Route::get('/contato',function(){
     return view('contato');
 });
+
+Route::get('/produtos/{id}',function($id){
+    $buscar = request('search');
+    return view('produtos', ['id'=>$id, 'buscar'=> $buscar]);
+});
