@@ -12,4 +12,8 @@
 
     @endif
 
+    @if($id != null)
+    <p>exibindo produto id:{{$id}}</p>
+    @endif
+
 @endsection
