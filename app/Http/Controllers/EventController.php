@@ -18,5 +18,14 @@ class EventController extends Controller
     public function criar(){
         return view('eventos.criar');
     }
+
+    public function logar(){
+        return view('eventos.logar');
+
+    }
+
+    public function cadastrar(){
+        return view('eventos.cadastrar');
+    }
 }
 

@@ -39,11 +39,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="/">Entrar</a>
+                                <a class="nav-link active" href="/eventos/logar">Entrar</a>
                             </li>
 
                             <li class="nav-item">
-                                 <a class="nav-link active" href="/">Cadastrar</a>
+                                 <a class="nav-link active" href="/eventos/cadastrar">Cadastrar</a>
                             </li>
                         </ul>
                     </div>
