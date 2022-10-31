@@ -18,9 +18,9 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav  class="navbar navbar-expand-lg bg-light">
 
-                <div class="container-fluid">
+                <div class="container-fluid" id="navBar">
 
                     <a class="navbar-brand" href="/">
                         <img src="/img/hdcevents_logo.svg" id="navbar-img">
