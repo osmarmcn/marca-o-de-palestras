@@ -24,16 +24,3 @@ Route::get('/eventos/cadastrar', [EventController::class, 'cadastrar']);
 Route::get('/contato',function(){
     return view('contato');
 });
-
-Route::get('/produtos/{id}',function($id = null){
-    $buscar = request('search');
-    return view('produtos', ['id'=>$id, 'buscar'=> $buscar]);
-});
-
-Route::get('/produto',function(){
-
-    $busca = request('search');
-
-    return view('produto', ['busca'=>$busca]);
-
-});
