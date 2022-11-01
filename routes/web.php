@@ -24,3 +24,5 @@ Route::get('/eventos/cadastrar', [EventController::class, 'cadastrar']);
 Route::get('/contato',function(){
     return view('contato');
 });
+
+Route::post('/eventos',[EventController::class,'store']);
