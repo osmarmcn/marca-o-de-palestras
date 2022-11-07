@@ -26,3 +26,5 @@ Route::get('/contato',function(){
 });
 
 Route::post('/eventos',[EventController::class,'store']);
+
+Route::get('/eventos/{id}',[EventController::class, 'show']);

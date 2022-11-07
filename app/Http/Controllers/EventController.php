@@ -46,7 +46,7 @@ class EventController extends Controller
 
             $imageName = md5($requestImage->getClientOriginalName().strtotime("now")).".".$extension;
 
-            $requestImage->move(public_path('img/eventos'), $imageName);
+            $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
 
@@ -56,6 +56,12 @@ class EventController extends Controller
 
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
 
+    }
+
+    public function show($id){
+        $event = Event::findOrFail($id);
+
+        return view('eventos.show',['event'=>$event]);
     }
 }
 
