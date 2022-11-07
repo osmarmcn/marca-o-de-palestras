@@ -30,6 +30,22 @@
             <option value="1">sim</option>
            </select>
         </div>
+
+        <div class="form-group">
+            <label for="cidade">Adicione itens de infraestrutura:</label>
+          <div class="form-group">
+            <input type="checkbox" name="itens[]" value="cadeiras">Cadeiras
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="itens[]" value="palco">Palco
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="itens[]" value="open food"> Open food
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="itens[]" value="open bar">Open bar
+          </div>
+        </div>
         
         <div class="mb-3">
             <button type="submit"  class="btn btn-primary" >Criar evento</button>
