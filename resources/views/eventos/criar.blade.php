@@ -16,6 +16,10 @@
             <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Nome do evento">
         </div>
         <div class="form-group">
+            <label for="data">Data do evento:</label>
+            <input type="date" class="form-control" name="data" id="data">
+        </div>
+        <div class="form-group">
             <label for="relatorio">Descrição:</label>
            <textarea name="relatorio" id="relatorio" class="form-control" placeholder="O que vai acontecer no evento"></textarea>
         </div>
