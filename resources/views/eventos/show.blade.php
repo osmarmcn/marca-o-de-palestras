@@ -13,7 +13,7 @@
         <h1>{{$event->titulo}}</h1>
         <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{$event->cidade}}</p>
         <p class="events-participants"><ion-icon name="people-outline"></ion-icon>x Participantes</p>
-        <p class="event-owner"><ion-icon name="star-outline"></ion-icon>Dono do evento</p>
+        <p class="event-owner"><ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
         <a href="#" class="btn btn-primary" id="event-submit">Confirmar presença</a>
 
         <h3>Evento conta com:</h3>
