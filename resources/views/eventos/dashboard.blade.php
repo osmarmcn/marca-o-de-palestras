@@ -25,7 +25,14 @@
                 <td scropt="row">{{$loop->index + 1}}</td>
                 <td><a href="/eventos/{{$event->id}}">{{$event->titulo}}</a></td>
                 <td>o</td>
-                <td><a href="#">editar</a> <a href="#">deletar</a></td>
+                <td>
+                    <a href="#" class="btn btn-info edit-btn" ><ion-icon name="create-outline"></ion-icon> editar</a>
+                    <form action="/eventos/{{$event->id}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"> </ion-icon>Deletar</button>
+                   </form>
+                </td>
             </tr>
 
             @endforeach
@@ -33,7 +40,7 @@
 
     </table>
     @else
-    <p>Vocênão tem eventos, <a href="/eventos/criar"></a>Criar eventos </p>
+    <p>Você não tem eventos, <a href="/eventos/criar">Criar eventos</a> </p>
     @endif
 
 </div>

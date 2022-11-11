@@ -18,7 +18,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/eventos/criar', [EventController::class, 'criar'])->middleware('auth');
-Route::get('eventos/logar',[EventController::class, 'logar']);
+
 Route::get('/eventos/cadastrar', [EventController::class, 'cadastrar']);
 
 Route::get('/contato',function(){
@@ -26,9 +26,11 @@ Route::get('/contato',function(){
 });
 
 Route::post('/eventos',[EventController::class,'store']);
+Route::delete('/eventos/{id}',[EventController::class, 'destroy']);
 
 Route::get('/eventos/{id}',[EventController::class, 'show']);
 
 Route::get('/dashboard',[EventController::class, 'dashboard'])->middleware('auth');
+
 
 
