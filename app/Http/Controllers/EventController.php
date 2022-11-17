@@ -120,7 +120,7 @@ class EventController extends Controller
     public function joinEvent($id){
         $user = auth()->user();
 
-        $user->eventsParticipant()->attach($id);
+        $user->eventsAsParticipant()->attach($id);
 
         $event = Event::findOrFail($id);
 

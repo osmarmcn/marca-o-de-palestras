@@ -16,7 +16,7 @@
         <thead>
             <th scope="col">#</th>
             <th scope="col">Nome</th>
-            <th scope="col">Paarticipantes</th>
+            <th scope="col"> Participantes</th>
             <th scope="col">Ações</th>
         </thead>
         <tbody>
