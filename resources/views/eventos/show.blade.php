@@ -20,7 +20,7 @@
             <a href="#" class="btn btn-primary" id="event-submit" onclick="event.preventDefault(); this.closest('form').submit();">Confirmar presença</a>
       </form>
         @else
-        <p id="already-joined-msg">Você ja está participando do evento</p>
+        <p id="already-joined-msg">Você já está participando do evento</p>
 
 
         @endif
@@ -41,8 +41,8 @@
       </div>
        <div class="col-md-12" id="description-container">
         <h3>Sobre o evento:</h3>
-        <p class="event-description">{{$event->description}}</p>
-        <input type="">
+        <p class="event-description">{{$event->relatorio}}</p>
+       
 
        </div>
     </div>
